@@ -73,11 +73,10 @@
 
    header {
       font-size: 1.4rem;
-      flex-wrap: wrap;
-      display: flex;
+      
    }
    @media(min-width:600px){
-      header .entete {
+      header .entete{
          display: none;
       }
    }
@@ -88,11 +87,6 @@
       }
    }
    
-   @media(min-width:600px){
-      header picture {
-         display: none;
-      }
-   }
 
    @media(min-width:600px){
       .logo {
@@ -113,28 +107,29 @@
    }
 
 
-   .nav--header .nav__list{
+   .nav--header, .nav__list{
       display: flex;
       width:100%;
    }
 
    @media(max-width:600px){
       .nav--header{
-         flex-wrap: nowrap;
+         flex-wrap:wrap;
          justify-content: space-between;
       }
    }
 
    @media(min-width:600px){
       .nav--header .nav__list{
-         width: auto;
+         width: 100%;
+     align-items:flex-start;
       }
    }
 
    @media(min-width:600px){
       .nav--header{
-         width: auto;
-         flex-wrap: nowrap;
+         width: 100%;
+         
          justify-content: space-between;
       }
    }
