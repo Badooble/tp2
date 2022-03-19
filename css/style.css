@@ -376,7 +376,7 @@ h1 { /* = 32px */
 h2 { /* = 24px */
    font-size: 2.4rem;
    text-transform: uppercase;
-   display: flex;
+   display: flex;  /* Pourquoi un display:flex ici?? */
 }
 @media (min-width: 600px) {
    h2 { /* = 32px */
